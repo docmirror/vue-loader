@@ -1,14 +1,15 @@
 module.exports = {
+  dest: 'loader-vuejs',
   locales: {
     '/': {
+      lang: 'zh-CN',
+      title: 'Vue Loader 中文文档',
+      description: '处理 Vue 单文件组件的 Webpack loader，Vue Loader 中文文档，Vue Loader 国内镜像，Vue Loader 中文网，Vue Loader 官网打不开，Vue Loader 官网打开慢'
+    },
+    '/en': {
       lang: 'en-US',
       title: 'Vue Loader',
       description: 'Webpack loader for single-file Vue components'
-    },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: 'Vue Loader',
-      description: '处理 Vue 单文件组件的 Webpack loader'
     },
     '/ru/': {
       lang: 'ru',
@@ -17,7 +18,7 @@ module.exports = {
     }
   },
   serviceWorker: true,
-  theme: 'vue',
+  theme: 'docmirror',
   themeConfig: {
     algolia: {
       apiKey: '3462ea4a6a56b94eba5b01497d6eb627',
@@ -29,7 +30,7 @@ module.exports = {
       updatePop: true
     },
     locales: {
-      '/': {
+      '/en/': {
         label: 'English',
         selectText: 'Languages',
         editLinkText: 'Edit this page on GitHub',
@@ -66,7 +67,7 @@ module.exports = {
           '/guide/testing'
         ]
       },
-      '/zh/': {
+      '/': {
         label: '简体中文',
         selectText: '选择语言',
         editLinkText: '在 GitHub 上编辑此页',

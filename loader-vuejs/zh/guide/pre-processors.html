@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用预处理器 | Vue Loader 中文文档</title>
+    <meta name="description" content="处理 Vue 单文件组件的 Webpack loader，Vue Loader 中文文档，Vue Loader 国内镜像，Vue Loader 中文网，Vue Loader 官网打不开，Vue Loader 官网打开慢">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.a8bea730.css" as="style"><link rel="preload" href="/assets/js/app.f08d727e.js" as="script"><link rel="preload" href="/assets/js/43.9c9043ab.js" as="script"><link rel="prefetch" href="/assets/js/10.a114b627.js"><link rel="prefetch" href="/assets/js/11.6fd19879.js"><link rel="prefetch" href="/assets/js/12.9ff015c3.js"><link rel="prefetch" href="/assets/js/13.26a4de36.js"><link rel="prefetch" href="/assets/js/14.95dab746.js"><link rel="prefetch" href="/assets/js/15.9691e94d.js"><link rel="prefetch" href="/assets/js/16.101542f7.js"><link rel="prefetch" href="/assets/js/17.79058574.js"><link rel="prefetch" href="/assets/js/18.0c482506.js"><link rel="prefetch" href="/assets/js/19.ac07cf62.js"><link rel="prefetch" href="/assets/js/20.92c6a40f.js"><link rel="prefetch" href="/assets/js/21.77548eb9.js"><link rel="prefetch" href="/assets/js/22.b6bf8595.js"><link rel="prefetch" href="/assets/js/23.5fc70ac9.js"><link rel="prefetch" href="/assets/js/24.24ae9220.js"><link rel="prefetch" href="/assets/js/25.6063ea01.js"><link rel="prefetch" href="/assets/js/26.e5bb7520.js"><link rel="prefetch" href="/assets/js/27.b11f490e.js"><link rel="prefetch" href="/assets/js/28.5e90e383.js"><link rel="prefetch" href="/assets/js/29.2a4dae4f.js"><link rel="prefetch" href="/assets/js/3.e07a48a0.js"><link rel="prefetch" href="/assets/js/30.28b9256b.js"><link rel="prefetch" href="/assets/js/31.4370a0a5.js"><link rel="prefetch" href="/assets/js/32.6119b413.js"><link rel="prefetch" href="/assets/js/33.3b8e35a2.js"><link rel="prefetch" href="/assets/js/34.8771fa00.js"><link rel="prefetch" href="/assets/js/35.012ac30a.js"><link rel="prefetch" href="/assets/js/36.fae7bb1f.js"><link rel="prefetch" href="/assets/js/37.9aaa69b9.js"><link rel="prefetch" href="/assets/js/38.38a51b35.js"><link rel="prefetch" href="/assets/js/39.8ca2086e.js"><link rel="prefetch" href="/assets/js/4.542c9ac2.js"><link rel="prefetch" href="/assets/js/40.77aa05e5.js"><link rel="prefetch" href="/assets/js/41.ec414567.js"><link rel="prefetch" href="/assets/js/42.26494577.js"><link rel="prefetch" href="/assets/js/44.ab29c922.js"><link rel="prefetch" href="/assets/js/45.4193dd8c.js"><link rel="prefetch" href="/assets/js/46.372e44b4.js"><link rel="prefetch" href="/assets/js/47.bbf8de2f.js"><link rel="prefetch" href="/assets/js/48.e6a9e8c4.js"><link rel="prefetch" href="/assets/js/49.5b519d29.js"><link rel="prefetch" href="/assets/js/5.6b22a1a4.js"><link rel="prefetch" href="/assets/js/6.1019449d.js"><link rel="prefetch" href="/assets/js/7.23820790.js"><link rel="prefetch" href="/assets/js/8.70e971cc.js"><link rel="prefetch" href="/assets/js/9.c287a132.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.ade5e3f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a8bea730.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vue Loader 中文文档</span></a> <div class="links" style="max-width:nullpx;"><form id="search-form" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/zh/spec.html" class="nav-link">单文件组件规范</a></div><div class="nav-item"><a href="/zh/options.html" class="nav-link">选项参考</a></div><div class="nav-item"><a href="/zh/migrating.html" class="nav-link">如何从 v14 迁移</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/pre-processors.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/en.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/ru/" class="nav-link">Русский</a></li></ul></div></div> <a href="https://github.com/vuejs/vue-loader" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/zh/spec.html" class="nav-link">单文件组件规范</a></div><div class="nav-item"><a href="/zh/options.html" class="nav-link">选项参考</a></div><div class="nav-item"><a href="/zh/migrating.html" class="nav-link">如何从 v14 迁移</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/pre-processors.html" class="nav-link router-link-exact-active router-link-active">简体中文</a></li><li class="dropdown-item"><!----> <a href="/en.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/ru/" class="nav-link">Русский</a></li></ul></div></div> <a href="https://github.com/vuejs/vue-loader" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav> <div style="padding:20px 30px  0px 30px;"><a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=qya11txb" style="width:100%"><img src="https://img.alicdn.com/tfs/TB1qnR3R1L2gK0jSZFmXXc7iXXa-440-240.jpg" style="width:100%"></a></div> <ul class="sidebar-links"><li><a href="/zh/" class="sidebar-link">介绍</a></li><li><a href="/zh/guide/" class="sidebar-link">起步</a></li><li><a href="/zh/guide/asset-url.html" class="sidebar-link">处理资源路径</a></li><li><a href="/zh/guide/pre-processors.html" class="active sidebar-link">使用预处理器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#sass" class="sidebar-link">Sass</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#sass-vs-scss" class="sidebar-link">Sass vs SCSS</a></li><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#共享全局变量" class="sidebar-link">共享全局变量</a></li></ul></li><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#less" class="sidebar-link">Less</a></li><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#stylus" class="sidebar-link">Stylus</a></li><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#postcss" class="sidebar-link">PostCSS</a></li><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#babel" class="sidebar-link">Babel</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#排除-node-modules" class="sidebar-link">排除 node_modules</a></li></ul></li><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#typescript" class="sidebar-link">TypeScript</a></li><li class="sidebar-sub-header"><a href="/zh/guide/pre-processors.html#pug" class="sidebar-link">Pug</a></li></ul></li><li><a href="/zh/guide/scoped-css.html" class="sidebar-link">Scoped CSS</a></li><li><a href="/zh/guide/css-modules.html" class="sidebar-link">CSS Modules</a></li><li><a href="/zh/guide/hot-reload.html" class="sidebar-link">热重载</a></li><li><a href="/zh/guide/functional.html" class="sidebar-link">函数式组件</a></li><li><a href="/zh/guide/custom-blocks.html" class="sidebar-link">自定义块</a></li><li><a href="/zh/guide/extract-css.html" class="sidebar-link">CSS 提取</a></li><li><a href="/zh/guide/linting.html" class="sidebar-link">代码校验 (Linting)</a></li><li><a href="/zh/guide/testing.html" class="sidebar-link">测试</a></li></ul> </div> <div class="page"> <div class="content"><h1 id="使用预处理器"><a href="#使用预处理器" class="header-anchor">#</a> 使用预处理器</h1> <p>在 webpack 中，所有的预处理器需要匹配对应的 loader。Vue Loader 允许你使用其它 webpack loader 处理 Vue 组件的某一部分。它会根据 <code>lang</code> 特性以及你 webpack 配置中的规则自动推断出要使用的 loader。</p> <h2 id="sass"><a href="#sass" class="header-anchor">#</a> Sass</h2> <p>例如，为了通过 Sass/SCSS 编译我们的 <code>&lt;style&gt;</code> 标签：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D sass-loader node-sass
+</code></pre></div><p>在你的 webpack 配置中：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// ... 忽略其它规则</span>
+
+      <span class="token comment">// 普通的 `.scss` 文件和 `*.vue` 文件中的</span>
+      <span class="token comment">// `&lt;style lang=&quot;scss&quot;&gt;` 块都应用它</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.scss$/</span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+          <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+          <span class="token string">'sass-loader'</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 插件忽略</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>现在，除了能够 <code>import 'style.scss'</code>，我们还可以在 Vue 组件中使用 SCSS：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token comment">/* 在这里撰写 SCSS */</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>这个块里的任何内容都会被 webpack 当作在一个 <code>*.scss</code> 文件中一样被处理。</p> <h3 id="sass-vs-scss"><a href="#sass-vs-scss" class="header-anchor">#</a> Sass vs SCSS</h3> <p>注意 <code>sass-loader</code> 会默认处理不基于缩进的 <code>scss</code> 语法。为了使用基于缩进的 <code>sass</code> 语法，你需要向这个 loader 传递选项：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.sass$/</span><span class="token punctuation">,</span>
+  use<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+    <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      loader<span class="token operator">:</span> <span class="token string">'sass-loader'</span><span class="token punctuation">,</span>
+      options<span class="token operator">:</span> <span class="token punctuation">{</span>
+        indentedSyntax<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// sass-loader version &gt;= 8</span>
+        sassOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+          indentedSyntax<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="共享全局变量"><a href="#共享全局变量" class="header-anchor">#</a> 共享全局变量</h3> <p><code>sass-loader</code> 也支持一个 <code>prependData</code> 选项，这个选项允许你在所有被处理的文件之间共享常见的变量，而不需要显式地导入它们：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.scss$/</span><span class="token punctuation">,</span>
+  use<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+    <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      loader<span class="token operator">:</span> <span class="token string">'sass-loader'</span><span class="token punctuation">,</span>
+      options<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 你也可以从一个文件读取，例如 `variables.scss`</span>
+        <span class="token comment">// 如果 sass-loader 版本 &lt; 8，这里使用 `data` 字段</span>
+        prependData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">$color: red;</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="less"><a href="#less" class="header-anchor">#</a> Less</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D <span class="token function">less</span> less-loader
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.less$/</span><span class="token punctuation">,</span>
+  use<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+    <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+    <span class="token string">'less-loader'</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="stylus"><a href="#stylus" class="header-anchor">#</a> Stylus</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D stylus stylus-loader
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.styl(us)?$/</span><span class="token punctuation">,</span>
+  use<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+    <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+    <span class="token string">'stylus-loader'</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="postcss"><a href="#postcss" class="header-anchor">#</a> PostCSS</h2> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>Vue Loader v15 不再默认应用 PostCSS 变换。你需要通过 <code>postcss-loader</code> 使用 PostCSS。</p></div> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D postcss-loader
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+  use<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      loader<span class="token operator">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+      options<span class="token operator">:</span> <span class="token punctuation">{</span> importLoaders<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'postcss-loader'</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>PostCSS 的配置可以通过 <code>postcss.config.js</code> 或 <code>postcss-loader</code> 选项来完成。其更多细节请查阅 <a href="https://github.com/postcss/postcss-loader" target="_blank" rel="noopener noreferrer">postcss-loader 文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <p><code>postcss-loader</code> 也可以和上述其它预处理器结合使用。</p> <h2 id="babel"><a href="#babel" class="header-anchor">#</a> Babel</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D babel-core babel-loader
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.js?$/</span><span class="token punctuation">,</span>
+  loader<span class="token operator">:</span> <span class="token string">'babel-loader'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Babel 的配置可以通过 <code>.babelrc</code> 或 <code>babel-loader</code> 选项来完成。</p> <h3 id="排除-node-modules"><a href="#排除-node-modules" class="header-anchor">#</a> 排除 node_modules</h3> <p><code>exclude: /node_modules/</code> 在应用于 <code>.js</code> 文件的 JS 转译规则 (例如 <code>babel-loader</code>) 中是蛮常见的。鉴于 v15 中的推导变化，如果你导入一个 <code>node_modules</code> 内的 Vue 单文件组件，它的 <code>&lt;script&gt;</code> 部分在转译时将会被排除在外。</p> <p>为了确保 JS 的转译应用到 <code>node_modules</code> 的 Vue 单文件组件，你需要通过使用一个排除函数将它们加入白名单：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.js$/</span><span class="token punctuation">,</span>
+  loader<span class="token operator">:</span> <span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">exclude</span><span class="token operator">:</span> <span class="token parameter">file</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+    <span class="token regex">/node_modules/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+    <span class="token operator">!</span><span class="token regex">/\.vue\.js/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="typescript"><a href="#typescript" class="header-anchor">#</a> TypeScript</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D typescript ts-loader
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 将 `.ts` 添加为一个可解析的扩展名。</span>
+    extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'.ts'</span><span class="token punctuation">,</span> <span class="token string">'.js'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// ... 忽略其它规则</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.ts$/</span><span class="token punctuation">,</span>
+        loader<span class="token operator">:</span> <span class="token string">'ts-loader'</span><span class="token punctuation">,</span>
+        options<span class="token operator">:</span> <span class="token punctuation">{</span> appendTsSuffixTo<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token regex">/\.vue$/</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// ...plugin omitted</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>TypeScript 的配置可以通过 <code>tsconfig.json</code> 来完成。你也可以查阅 <a href="https://github.com/TypeStrong/ts-loader" target="_blank" rel="noopener noreferrer">ts-loader<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 的文档。</p> <h2 id="pug"><a href="#pug" class="header-anchor">#</a> Pug</h2> <p>模板的处理会稍微有些不同，因为绝大多数 webpack 的模板类 loader，诸如 <code>pug-loader</code>，会返回一个模板函数而不是一个编译好的 HTML 字符串。所以我们需要使用一个返回原始的 HTML 字符串的 loader，例如 <code>pug-plain-loader</code>，而不是使用 <code>pug-loader</code>。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -D pug pug-plain-loader
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.pug$/</span><span class="token punctuation">,</span>
+  loader<span class="token operator">:</span> <span class="token string">'pug-plain-loader'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后你可以写：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pug<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+div
+  h1 Hello world!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>如果你还打算使用它在 JavaScript 中将 <code>.pug</code> 文件作为字符串导入，你需要在这个预处理 loader 之后链上 <code>raw-loader</code>。注意添加 <code>raw-loader</code> 会破坏 Vue 组件内的用法，所以你需要定义两条规则，其中一条指向使用了一个 <code>resourceQuery</code> 的 Vue 文件，另一条指向 (回退到) JavaScript 导入：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js -&gt; module.rules</span>
+<span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.pug$/</span><span class="token punctuation">,</span>
+  oneOf<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// 这条规则应用到 Vue 组件内的 `&lt;template lang=&quot;pug&quot;&gt;`</span>
+    <span class="token punctuation">{</span>
+      resourceQuery<span class="token operator">:</span> <span class="token regex">/^\?vue/</span><span class="token punctuation">,</span>
+      use<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'pug-plain-loader'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 这条规则应用到 JavaScript 内的 pug 导入</span>
+    <span class="token punctuation">{</span>
+      use<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'raw-loader'</span><span class="token punctuation">,</span> <span class="token string">'pug-plain-loader'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zh/guide/asset-url.html" class="prev">
+          处理资源路径
+        </a></span> <span class="next"><a href="/zh/guide/scoped-css.html">
+          Scoped CSS
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.f08d727e.js" defer></script><script src="/assets/js/43.9c9043ab.js" defer></script>
+  </body>
+</html>

@@ -11428,10 +11428,10 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-theme-vue@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-vue/-/vuepress-theme-vue-1.1.0.tgz#8b109e3db8cad7b18459f4d77076808110c2bcaa"
-  integrity sha512-oYbfWkeaQ6aUU8sl8fMzLnBnvsd23V0wkiqI0bR3Tq3mlI8EJu26PFOyyF7KvJu0qNo/lcL7CDSmX7ymUVpnvw==
+vuepress-theme-docmirror@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/vuepress-theme-docmirror/-/vuepress-theme-docmirror-1.1.1.tgz#8bd68c64c99e671d9fa668137a7935da7d2d2483"
+  integrity sha512-6xGTpp0mhRHOK2pVmxXmG1wjZkv6RKUlIBn2RuWXu6HjJE0CaYhb7tYxb6WaHUOYFKcOe68xml+70cW2CAhlLw==
 
 vuepress@^0.14.2:
   version "0.14.11"

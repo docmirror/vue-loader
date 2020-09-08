@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Миграция с версии v14 | Vue Loader</title>
+    <meta name="description" content="Webpack loader для однофайловых компонентов Vue">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.a8bea730.css" as="style"><link rel="preload" href="/assets/js/app.f08d727e.js" as="script"><link rel="preload" href="/assets/js/30.28b9256b.js" as="script"><link rel="prefetch" href="/assets/js/10.a114b627.js"><link rel="prefetch" href="/assets/js/11.6fd19879.js"><link rel="prefetch" href="/assets/js/12.9ff015c3.js"><link rel="prefetch" href="/assets/js/13.26a4de36.js"><link rel="prefetch" href="/assets/js/14.95dab746.js"><link rel="prefetch" href="/assets/js/15.9691e94d.js"><link rel="prefetch" href="/assets/js/16.101542f7.js"><link rel="prefetch" href="/assets/js/17.79058574.js"><link rel="prefetch" href="/assets/js/18.0c482506.js"><link rel="prefetch" href="/assets/js/19.ac07cf62.js"><link rel="prefetch" href="/assets/js/20.92c6a40f.js"><link rel="prefetch" href="/assets/js/21.77548eb9.js"><link rel="prefetch" href="/assets/js/22.b6bf8595.js"><link rel="prefetch" href="/assets/js/23.5fc70ac9.js"><link rel="prefetch" href="/assets/js/24.24ae9220.js"><link rel="prefetch" href="/assets/js/25.6063ea01.js"><link rel="prefetch" href="/assets/js/26.e5bb7520.js"><link rel="prefetch" href="/assets/js/27.b11f490e.js"><link rel="prefetch" href="/assets/js/28.5e90e383.js"><link rel="prefetch" href="/assets/js/29.2a4dae4f.js"><link rel="prefetch" href="/assets/js/3.e07a48a0.js"><link rel="prefetch" href="/assets/js/31.4370a0a5.js"><link rel="prefetch" href="/assets/js/32.6119b413.js"><link rel="prefetch" href="/assets/js/33.3b8e35a2.js"><link rel="prefetch" href="/assets/js/34.8771fa00.js"><link rel="prefetch" href="/assets/js/35.012ac30a.js"><link rel="prefetch" href="/assets/js/36.fae7bb1f.js"><link rel="prefetch" href="/assets/js/37.9aaa69b9.js"><link rel="prefetch" href="/assets/js/38.38a51b35.js"><link rel="prefetch" href="/assets/js/39.8ca2086e.js"><link rel="prefetch" href="/assets/js/4.542c9ac2.js"><link rel="prefetch" href="/assets/js/40.77aa05e5.js"><link rel="prefetch" href="/assets/js/41.ec414567.js"><link rel="prefetch" href="/assets/js/42.26494577.js"><link rel="prefetch" href="/assets/js/43.9c9043ab.js"><link rel="prefetch" href="/assets/js/44.ab29c922.js"><link rel="prefetch" href="/assets/js/45.4193dd8c.js"><link rel="prefetch" href="/assets/js/46.372e44b4.js"><link rel="prefetch" href="/assets/js/47.bbf8de2f.js"><link rel="prefetch" href="/assets/js/48.e6a9e8c4.js"><link rel="prefetch" href="/assets/js/49.5b519d29.js"><link rel="prefetch" href="/assets/js/5.6b22a1a4.js"><link rel="prefetch" href="/assets/js/6.1019449d.js"><link rel="prefetch" href="/assets/js/7.23820790.js"><link rel="prefetch" href="/assets/js/8.70e971cc.js"><link rel="prefetch" href="/assets/js/9.c287a132.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.ade5e3f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a8bea730.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ru/" class="home-link router-link-active"><!----> <span class="site-name">Vue Loader</span></a> <div class="links" style="max-width:nullpx;"><form id="search-form" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ru/guide/" class="nav-link">Руководство</a></div><div class="nav-item"><a href="/ru/spec.html" class="nav-link">Однофайловые компоненты</a></div><div class="nav-item"><a href="/ru/options.html" class="nav-link">Настройки</a></div><div class="nav-item"><a href="/ru/migrating.html" class="nav-link router-link-exact-active router-link-active">Миграция с версии v14</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/migrating.html" class="nav-link">简体中文</a></li><li class="dropdown-item"><!----> <a href="/en.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/ru/migrating.html" class="nav-link router-link-exact-active router-link-active">Русский</a></li></ul></div></div> <a href="https://github.com/vuejs/vue-loader" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ru/guide/" class="nav-link">Руководство</a></div><div class="nav-item"><a href="/ru/spec.html" class="nav-link">Однофайловые компоненты</a></div><div class="nav-item"><a href="/ru/options.html" class="nav-link">Настройки</a></div><div class="nav-item"><a href="/ru/migrating.html" class="nav-link router-link-exact-active router-link-active">Миграция с версии v14</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/migrating.html" class="nav-link">简体中文</a></li><li class="dropdown-item"><!----> <a href="/en.html" class="nav-link">en-US</a></li><li class="dropdown-item"><!----> <a href="/ru/migrating.html" class="nav-link router-link-exact-active router-link-active">Русский</a></li></ul></div></div> <a href="https://github.com/vuejs/vue-loader" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav> <div style="padding:20px 30px  0px 30px;"><a target="_blank" href="https://www.aliyun.com/minisite/goods?userCode=qya11txb" style="width:100%"><img src="https://img.alicdn.com/tfs/TB1qnR3R1L2gK0jSZFmXXc7iXXa-440-240.jpg" style="width:100%"></a></div> <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Миграция с версии v14</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/ru/migrating.html#важные-изменения" class="sidebar-link">Важные изменения</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ru/migrating.html#необходимо-установить-пnагин" class="sidebar-link">Необходимо установить плагин</a></li><li class="sidebar-sub-header"><a href="/ru/migrating.html#опредеnение-загрузчиков-webpack" class="sidebar-link">Определение загрузчиков webpack</a></li><li class="sidebar-sub-header"><a href="/ru/migrating.html#импорт-однофайnовых-компонентов-из-зависимостей" class="sidebar-link">Импорт однофайловых компонентов из зависимостей</a></li><li class="sidebar-sub-header"><a href="/ru/migrating.html#обработка-секций-шабnонов" class="sidebar-link">Обработка секций шаблонов</a></li><li class="sidebar-sub-header"><a href="/ru/migrating.html#внедрение-стиnей" class="sidebar-link">Внедрение стилей</a></li><li class="sidebar-sub-header"><a href="/ru/migrating.html#postcss" class="sidebar-link">PostCSS</a></li><li class="sidebar-sub-header"><a href="/ru/migrating.html#css-модуnи" class="sidebar-link">CSS модули</a></li></ul></li><li><a href="/ru/migrating.html#извnечение-css-в-отдеnьный-файn" class="sidebar-link">Извлечение CSS в отдельный файл</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/ru/migrating.html#ssr-externals" class="sidebar-link">SSR externals</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/ru/migrating.html#устаревшие-опции" class="sidebar-link">Устаревшие опции</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="миграция-с-версии-v14"><a href="#миграция-с-версии-v14" class="header-anchor">#</a> Миграция с версии v14</h1> <div class="tip custom-block"><p class="custom-block-title">Будьте внимательны</p> <p>Мы в процессе обновления Vue CLI 3 beta для использования webpack 4 + Vue Loader v15, поэтому вы можете захотеть подождать, если планируете переход на Vue CLI 3.</p></div> <h2 id="важные-изменения"><a href="#важные-изменения" class="header-anchor">#</a> Важные изменения</h2> <h3 id="необходимо-установить-пnагин"><a href="#необходимо-установить-пnагин" class="header-anchor">#</a> Необходимо установить плагин</h3> <p>Vue Loader v15 теперь для правильной работы требуется прилагаемый плагин webpack:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.js</span>
+<span class="token keyword">const</span> VueLoaderPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-loader/lib/plugin'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">VueLoaderPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="опредеnение-загрузчиков-webpack"><a href="#опредеnение-загрузчиков-webpack" class="header-anchor">#</a> Определение загрузчиков webpack</h3> <p>Vue Loader v15 теперь использует другую стратегию для определения загрузчиков, которые должны использоваться для языкового блока.</p> <p>Рассмотрим <code>&lt;style lang=&quot;less&quot;&gt;</code> для примера: в версии v14 и ниже, он попытается загрузить блок с помощью <code>less-loader</code>, и неявно добавляет в цепочку загрузчиков <code>css-loader</code> и <code>vue-style-loader</code> после него, используя инлайновые-строки с указанием загрузчиков.</p> <p>С версии v15, <code>&lt;style lang=&quot;less&quot;&gt;</code> будет вести себя так, как если бы это был загруженный файл <code>*.less</code> . Поэтому, чтобы обработать его, вам нужно предоставить явное правило в вашей основной конфигурации webpack:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// ... другие правила</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.less$/</span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+          <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+          <span class="token string">'less-loader'</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Преимущество состоит в том, что это же правило также применяется и к обычным импортам <code>*.less</code> из JavaScript, и вы можете конфигурировать опции для этих загрузчиков так как захотите. В версии v14 и ниже, если вы хотите предоставить пользовательские опции для предполагаемого загрузчика, то вам необходимо дублировать их в собственной опции <code>loaders</code> у Vue Loader. С версии v15 это больше не требуется.</p> <p>Версия v15 также позволяет использовать не-сериализуемые опции для загрузчиков, что было невозможно в предыдущих версиях.</p> <h3 id="импорт-однофайnовых-компонентов-из-зависимостей"><a href="#импорт-однофайnовых-компонентов-из-зависимостей" class="header-anchor">#</a> Импорт однофайловых компонентов из зависимостей</h3> <p>Обычная практика, указывать <code>exclude: /node_modules/</code> для правил транспиляции JS (например, <code>babel-loader</code>) которые применяются к файлам <code>.js</code>. Из-за изменения версии v15, если вы импортируете однофайловые компоненты SFC внутри <code>node_modules</code>, его секция <code>&lt;script&gt;</code> также будет исключена из транспиляции.</p> <p>Чтобы обеспечить транспиляцию JS для однофайловых компонентов Vue в <code>node_modules</code>, вам необходимо делать для них исключение с помощью функции в опции exclude:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.js$/</span><span class="token punctuation">,</span>
+  loader<span class="token operator">:</span> <span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">exclude</span><span class="token operator">:</span> <span class="token parameter">file</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+    <span class="token regex">/node_modules/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+    <span class="token operator">!</span><span class="token regex">/\.vue\.js/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="обработка-секций-шабnонов"><a href="#обработка-секций-шабnонов" class="header-anchor">#</a> Обработка секций шаблонов</h3> <p>v14 и ниже использует <a href="https://github.com/tj/consolidate.js/" target="_blank" rel="noopener noreferrer">consolidate<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> для компиляции <code>&lt;template lang=&quot;xxx&quot;&gt;</code>. v15 теперь обрабатывает их с помощью загрузчиков webpack.</p> <p>Обратите внимание, что некоторые загрузчики шаблонов, такие как <code>pug-loader</code> возвращают функцию шаблона вместо скомпилированной строки HTML. Для того чтобы передать корректное содержимое в компилятор шаблонов Vue, вам необходимо использовать загрузчики, которые вместо этого возвращают простой HTML. Например, для поддержки <code>&lt;template lang=&quot;pug&quot;&gt;</code>, вы можете использовать <a href="https://github.com/yyx990803/pug-plain-loader" target="_blank" rel="noopener noreferrer">pug-plain-loader<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.pug$/</span><span class="token punctuation">,</span>
+        loader<span class="token operator">:</span> <span class="token string">'pug-plain-loader'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Если вы также собираетесь импортировать файлы <code>.pug</code> как HTML-строки в JavaScript, вам нужно будет добавить в цепочку <code>raw-loader</code> после загрузчика пре-процессора. Обратите внимание, что добавление <code>raw-loader</code> сломает использование в компонентах Vue, поэтому вам потребуется два правила, одно направленное на файлы Vue с использованием <code>resourceQuery</code>, другое (fallback) нацеленное на импорты JavaScript:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.pug$/</span><span class="token punctuation">,</span>
+        oneOf<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token comment">// это применяется к `&lt;template lang=&quot;pug&quot;&gt;` в компонентах Vue</span>
+          <span class="token punctuation">{</span>
+            resourceQuery<span class="token operator">:</span> <span class="token regex">/^\?vue/</span><span class="token punctuation">,</span>
+            use<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'pug-plain-loader'</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// это применяется к импортам pug внутри JavaScript</span>
+          <span class="token punctuation">{</span>
+            use<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'raw-loader'</span><span class="token punctuation">,</span> <span class="token string">'pug-plain-loader'</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="внедрение-стиnей"><a href="#внедрение-стиnей" class="header-anchor">#</a> Внедрение стилей</h3> <p>Внедрение стилей на стороне клиента теперь внедряет все стили заранее, чтобы обеспечить консистентное поведение между режимом разработки и режимом, когда CSS извлекается в отдельный файл.</p> <p>Обратите внимание, что порядок внедрения всё ещё не гарантируется, поэтому вам следует избегать написания CSS, который зависит от порядка внедрения.</p> <h3 id="postcss"><a href="#postcss" class="header-anchor">#</a> PostCSS</h3> <p>Vue Loader больше не применяет трансформацию PostCSS по умолчанию. Для использования PostCSS сконфигурирйте <code>postcss-loader</code> таким образом, как и для обычных CSS файлов.</p> <h3 id="css-модуnи"><a href="#css-модуnи" class="header-anchor">#</a> CSS модули</h3> <p>CSS модули теперь должны явно настраиваться через опцию <code>css-loader</code>. Атрибут <code>module</code> на тегах <code>&lt;style&gt;</code> по-прежнему необходим для локального внедрения в компонент.</p> <p>Хорошая новость в том, что теперь вы можете настраивать <code>localIdentName</code> в одном месте:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            loader<span class="token operator">:</span> <span class="token string">'vue-style-loader'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            loader<span class="token operator">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+            options<span class="token operator">:</span> <span class="token punctuation">{</span>
+              modules<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              localIdentName<span class="token operator">:</span> <span class="token string">'[local]_[hash:base64:8]'</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Если вы хотите использовать CSS модули только в некоторых компонентах Vue, вы можете использовать правило <code>oneOf</code> и проверять наличие строки <code>module</code> внутри <code>resourceQuery</code>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  test<span class="token operator">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+  oneOf<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// это соответствует `&lt;style module&gt;`</span>
+    <span class="token punctuation">{</span>
+      resourceQuery<span class="token operator">:</span> <span class="token regex">/module/</span><span class="token punctuation">,</span>
+      use<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          loader<span class="token operator">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+          options<span class="token operator">:</span> <span class="token punctuation">{</span>
+            modules<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            localIdentName<span class="token operator">:</span> <span class="token string">'[local]_[hash:base64:5]'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// это соответствует простому `&lt;style&gt;` или `&lt;style scoped&gt;`</span>
+    <span class="token punctuation">{</span>
+      use<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+        <span class="token string">'css-loader'</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="извnечение-css-в-отдеnьный-файn"><a href="#извnечение-css-в-отдеnьный-файn" class="header-anchor">#</a> Извлечение CSS в отдельный файл</h2> <p>Работает аналогично тому, как вы бы настроили его для обычного CSS. Пример использования с помощью <a href="https://github.com/webpack-contrib/mini-css-extract-plugin" target="_blank" rel="noopener noreferrer">mini-css-extract-plugin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.vue$/</span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token string">'vue-loader'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+        <span class="token comment">// или `ExtractTextWebpackPlugin.extract(...)`</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span>
+          MiniCssExtractPlugin<span class="token punctuation">.</span>loader<span class="token punctuation">,</span>
+          <span class="token string">'css-loader'</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      filename<span class="token operator">:</span> <span class="token string">'output.css'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="ssr-externals"><a href="#ssr-externals" class="header-anchor">#</a> SSR externals</h2> <p>В SSR, мы обычно используем <code>webpack-node-externals</code> для исключения npm-зависимостей из серверной сборки. Если вам необходимо импортировать CSS из npm-зависимости, то предыдущим решением было указать белый список, например так:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// конфигурация webpack</span>
+externals<span class="token operator">:</span> <span class="token function">nodeExternals</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  whitelist<span class="token operator">:</span> <span class="token regex">/\.css$/</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>С версии v15, импорты для <code>&lt;style src=&quot;dep/foo.css&quot;&gt;</code> получают строку <code>resourceQuery</code>, добавленную в конце запроса, поэтому вам потребуется обновить белый список так:</p> <div class="language-js extra-class"><pre class="language-js"><code>externals<span class="token operator">:</span> <span class="token function">nodeExternals</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  whitelist<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token regex">/\.css$/</span><span class="token punctuation">,</span> <span class="token regex">/\?vue&amp;type=style/</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="устаревшие-опции"><a href="#устаревшие-опции" class="header-anchor">#</a> Устаревшие опции</h2> <p>Следующие опции объявлены устаревшими и должны настраиваться с использованием обычных правил модулей webpack:</p> <ul><li><code>loader</code></li> <li><code>preLoaders</code></li> <li><code>postLoaders</code></li> <li><code>postcss</code></li> <li><code>cssSourceMap</code></li> <li><code>buble</code></li> <li><code>extractCSS</code></li> <li><code>template</code></li></ul> <p>Следующие опции объявлены устаревшими и должны настраиваться с помощью новой опции <code>compilerOptions</code>:</p> <ul><li><code>preserveWhitespace</code> (используйте <code>compilerOptions.preserveWhitespace</code>)</li> <li><code>compilerModules</code> (используйте <code>compilerOptions.modules</code>)</li> <li><code>compilerDirectives</code> (используйте <code>compilerOptions.directives</code>)</li></ul> <p>Следующие опции были переименованы:</p> <ul><li><code>transformToRequire</code> (переименована в <code>transformAssetUrls</code>)</li></ul> <div class="tip custom-block"><p class="custom-block-title">СОВЕТ</p> <p>Полный список новых опций можно посмотреть <a href="/ru/options.html">на странице настроек</a>.</p></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.f08d727e.js" defer></script><script src="/assets/js/30.28b9256b.js" defer></script>
+  </body>
+</html>
