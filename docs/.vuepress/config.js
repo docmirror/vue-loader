@@ -1,5 +1,5 @@
 module.exports = {
-  dest: 'loader-vuejs',
+  dest: 'vue-loader',
   locales: {
     '/': {
       lang: 'zh-CN',
